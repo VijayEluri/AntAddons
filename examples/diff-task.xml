@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="AntAddons" default="example" basedir=".">
+
+    <description>Example of diff task.</description>
+
+	<taskdef resource="org/datech/antaddons/antaddons.properties">
+	  <classpath>
+	    <pathelement location="../dist/ant-addons.jar"/>
+	  </classpath>
+	</taskdef>
+	
+	<property name="data.dir" value="data" />
+	<property name="file.from" value="${data.dir}/file1.txt" />
+	<property name="file.to" value="${data.dir}/file2.txt" />
+	<property name="file.diff" value="${data.dir}/diff.txt" />
+	
+	<target name="example">
+	
+		<diff from="${file.from}" to="${file.to}" output="${file.diff}" />
+		<diff from="${file.from}" to="${file.to}" output="${file.diff}" verbose="true"/>
+	
+	</target>
+		
+</project>
