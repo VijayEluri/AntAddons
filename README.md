@@ -16,11 +16,11 @@ Load all tasks defined in AntAddons. You have explicitly to point the location o
 </taskdef>
 ```
 
-## Task manual
+## Tasks manual
 
 ### Diff task
 
-This task is based on [[java-diff |http://www.incava.org/projects/577828189]] API for file comparison.
+This task is based on [java-diff](http://www.incava.org/projects/577828189) API for file comparison.
 
 **Options:**
 
